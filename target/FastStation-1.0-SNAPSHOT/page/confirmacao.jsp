@@ -49,7 +49,7 @@
 
                 <div class="acoes">
                     <a href="PedidoServlet" class="btn-novo">Fazer novo pedido</a>
-                    <a href="index.html" class="link-voltar">Sair para o início</a>
+                    <a href="../index.html" class="link-voltar">Sair para o início</a>
                 </div>
             </div>    
         </div>
