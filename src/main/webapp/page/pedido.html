@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastStation | Pedido</title>
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/pedido.css" />
+</head>
+<body class="pagina-pedido">
+
+  <header class="topo-pedido">
+    <a href="index.html" class="btn-voltar">← Voltar</a>
+    <span class="logo">Fast<span>Station</span></span>
+  </header>
+
+  <section id="pedido">
+    <div class="form-card">
+
+      <div class="form-card-header">
+        <h2 class="form-titulo">Seu Pedido</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- enviar para confirmacao via GET (voces do back) para mostrar nome na confirmação -->
+      <form id="formPedido" action="PedidoServlet" method="POST">
+
+        <div class="form-group">
+          <label for="nomeCliente">Nome do cliente</label>
+          <input type="text" id="nomeCliente" name="nomeCliente" placeholder="Digite seu nome" required />
+        </div>
+
+        <div class="form-group">
+          <label>Produtos</label>
+          <div class="produtos-lista">
+
+            <label class="produto-item">
+              <input type="checkbox" name="produto" value="hamburguer" />
+              <div class="produto-info">
+                <span class="produto-icone">🍔</span>
+                <span class="produto-nome">Hambúrguer</span>
+              </div>
+              <span class="produto-preco">R$ 15,00</span>
+            </label>
+
+            <label class="produto-item">
+              <input type="checkbox" name="produto" value="pizza" />
+              <div class="produto-info">
+                <span class="produto-icone">🍕</span>
+                <span class="produto-nome">Pizza</span>
+              </div>
+              <span class="produto-preco">R$ 25,00</span>
+            </label>
+
+            <label class="produto-item">
+              <input type="checkbox" name="produto" value="refrigerante" />
+              <div class="produto-info">
+                <span class="produto-icone">🥤</span>
+                <span class="produto-nome">Refrigerante</span>
+              </div>
+              <span class="produto-preco">R$ 5,00</span>
+            </label>
+
+            <label class="produto-item">
+              <input type="checkbox" name="produto" value="batata" />
+              <div class="produto-info">
+                <span class="produto-icone">🍟</span>
+                <span class="produto-nome">Batata frita</span>
+              </div>
+              <span class="produto-preco">R$ 10,00</span>
+            </label>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Forma de pagamento</label>
+          <div class="pagamento-lista">
+            <label class="pagamento-item">
+              <input type="radio" name="pagamento" value="dinheiro" required />
+              <span class="pagamento-icone">💵</span>
+              <span>Dinheiro</span>
+            </label>
+            <label class="pagamento-item">
+              <input type="radio" name="pagamento" value="cartao" />
+              <span class="pagamento-icone">💳</span>
+              <span>Cartão</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="total-box total-estatico">
+          <span class="total-label">Selecione os produtos acima</span>
+          <span class="total-valor">—</span>
+        </div>
+
+        <button type="submit" class="btn-confirmar">✅ Confirmar Pedido</button>
+
+      </form>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    © FastStation · Feito com ❤️
+  </footer>
+
+</body>
+</html>

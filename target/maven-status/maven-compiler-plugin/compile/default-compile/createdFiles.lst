@@ -1,0 +1,5 @@
+com\mycompany\faststation\resources\JakartaEE10Resource.class
+controller\PedidoServlet.class
+com\mycompany\faststation\JakartaRestConfiguration.class
+controller\CadastroController.class
+model\Pedido.class
