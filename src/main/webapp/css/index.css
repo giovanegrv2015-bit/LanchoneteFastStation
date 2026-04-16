@@ -100,7 +100,7 @@
   padding: 15px 44px;
   border-radius: 100px;
   transition:
-    background var(--transition),
+    background-color var(--transition),
     transform var(--transition),
     box-shadow var(--transition);
   position: relative;
