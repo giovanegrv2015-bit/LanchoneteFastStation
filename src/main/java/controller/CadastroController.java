@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("page/PedidoServlet")
+@WebServlet("/page/PedidoServlet")
 public class CadastroController extends HttpServlet {
     
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
