@@ -19,6 +19,7 @@
             <div class="confirmacao visivel">
                 <div class="confirmacao-header">
                     <div class="confirmacao-icone">🎉</div>
+                    <br>
                     <h3>Pedido Confirmado!</h3>
                 </div>
 
